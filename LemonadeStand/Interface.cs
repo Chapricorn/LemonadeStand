@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace LemnadeStand
 {
-    class Sugar
+    interface Interface
     {
+
     }
+       
+
+
+       
 }
