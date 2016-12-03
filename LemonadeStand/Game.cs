@@ -18,17 +18,11 @@ namespace LemonadeStand
             TotalDays();
             ShowRecipe();
             PlayerChoice();
-
-
-
         }
         public void DisplayWelcome()
         {
             Console.WriteLine("Welcome to Lemonade Stand Game \n");
         }
-
-
-
         public void DisplayRule()
         {
             Console.WriteLine(" Would you like to see the rules? Yes | No \n");
@@ -61,7 +55,6 @@ namespace LemonadeStand
             Console.Write(" Choose between Day '1' and Day '7' to Start Selling Lemonades. \n");
             string chooseDay = Console.ReadLine();
 
-
             switch (chooseDay)
             {
                 case "1":
@@ -88,35 +81,18 @@ namespace LemonadeStand
                     //}
                     Console.ReadLine();
                     Console.WriteLine("Please choose a Day to start.");
-
                     TotalDays();
             }
         }
 
         public void ShowRecipe()
         {
-           
-            //Recipe showRecipe = new Recipe();
-            //string Recipe = Console.ReadLine();
+            Recipe
         }
 
         public void PlayerChoice()
         {
             player.MakeChoice();
-
         }
-
-        //int cash = 0;
-        //while (++cash < 2)
-        //{
-        //    Console.WriteLine("Cash {0}", cash);
-        //}
-        //if (player.cashTotal > 0)
-        //{
-        //    Console.WriteLine(" Player one win");
-        //    Console.WriteLine(" The game is over ");
-        //    player.cashTotal = 2;
-        //}
-
     }
 }

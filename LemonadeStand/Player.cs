@@ -8,12 +8,9 @@ namespace LemonadeStand
 {
     class Player
     {
-
         public string name;
         public int cashTotal;
         public string choice;
-
-
         public void CreatePlayerName()
         {
             name = name;
@@ -29,7 +26,6 @@ namespace LemonadeStand
         }
         public string MakeChoice()
         {
-
             Console.WriteLine(" Choose Ingredients for Lemonades. \n");
             string choice = Console.ReadLine();
 
@@ -37,32 +33,26 @@ namespace LemonadeStand
             {
                 Console.WriteLine(" How many Lemons?");
                 AddCash();
-
             }
-
             if (choice == "Cups")
             {
                 Console.WriteLine(" How many Cups?");
                 AddCash();
-
             }
             if (choice == "Ice")
             {
                 Console.WriteLine(" How many Ice Cubes?");
                 AddCash();
-
             }
             if (choice == "Sugar")
             {
                 Console.WriteLine(" How many bags of Sugars?");
                 AddCash();
-
             }
             if (choice == "WaterBottles")
             {
                 Console.WriteLine(" How many Water Bottles?");
                 AddCash();
-  
             }
             return choice;
         }

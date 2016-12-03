@@ -16,6 +16,7 @@ namespace LemonadeStand
 
         public void ShowRecipe()
         {
+            Console.Write(" Choose what you need to make Lemonades. \n");
             Console.WriteLine("How many lemons would you like to use?");
             int.TryParse(Console.ReadLine(), out lemonsRecipe);
             Console.WriteLine("How much sugar would you like to use?");
