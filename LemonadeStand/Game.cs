@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
+    //public Player player;
+    //public StorePrices store;
     class Game
     {
-        Player player;
-        //Player player2;
         public void StartGame()
         {
             DisplayWelcome();
             DisplayRule();
             GetPlayerName();
             TotalDays();
-            ShowRecipe();
-            PlayerChoice();
+            //ChooseSupplies();
+            BuySupplies();
+
         }
         public void DisplayWelcome()
         {
@@ -59,40 +60,65 @@ namespace LemonadeStand
             {
                 case "1":
                     Console.WriteLine(" Great, you have chosen to start on Day " + chooseDay + " You have 1 Full Week to Sell Lemonades. ");
+                    Console.WriteLine("Please press ENTER to continue.");
                     break;
                 case "2":
                     Console.WriteLine(" Good, you have chosen to slack off " + chooseDay + " Days, you have 5 Days left to Sell Lemonades. ");
+                    Console.WriteLine("Please press ENTER to continue.");
                     break;
                 case "3":
                     Console.WriteLine(" Ok, you have chosen to slack off " + chooseDay + " Days, you have 4 more Days to Sell Lemonades. ");
+                    Console.WriteLine("Please press ENTER to continue.");
                     break;
                 case "4":
                     Console.WriteLine(" You have chosen to slack off " + chooseDay + " Days, you have 3 Days left to Sell Lemonades. ");
+                    Console.WriteLine("Please press ENTER to continue.");
                     break;
                 case "5":
                     Console.WriteLine(" Awe Man!, You slacked off " + chooseDay + " Days, you have 2 Days left to Sell Lemonades. ");
+                    Console.WriteLine("Please press ENTER to continue.");
                     break;
                 case "6":
                     Console.WriteLine(" Awe Man!, You slacked off " + chooseDay + " Days, Now you only have 1 Day to Sell Lemonades. ");
+                    Console.WriteLine("Please press ENTER to continue.");
                     break;
                 case "7":
-                    Console.WriteLine(" Wow! You slacked off " + chooseDay + " Days, I can't believe it! I'll just assumed you don't know how to make Lemonade? ");
+                    Console.WriteLine(" Wow! " + chooseDay + " Days, you are on your last day? ");
+                    Console.WriteLine("Please press ENTER to continue.");
                     break;
-                    //}
-                    Console.ReadLine();
-                    Console.WriteLine("Please choose a Day to start.");
-                    TotalDays();
             }
+            Console.ReadLine();
+            
+            //TotalDays();
         }
 
-        public void ShowRecipe()
-        {
-            Recipe
-        }
 
-        public void PlayerChoice()
+
+
+
+
+
+        //public void ChooseSupplies()
+        //{
+        //    Console.WriteLine("Please Choose the Supplies to make Lemonade.");
+        //    Console.ReadLine();
+        //    StorePrices storeSupplies = new LemonadeStand.StorePrices();
+        //    storeSupplies.BuySupplies();
+
+        //}
+        public void BuySupplies()
         {
-            player.MakeChoice();
+            Console.WriteLine("Please buy all required Supplies to make Lemonade.");
+            Console.WriteLine("Please press ENTER to continue.");
+            Console.ReadLine();
+            StorePrices storeSupplies = new LemonadeStand.StorePrices();
+            storeSupplies.BuySupplies();
         }
+        public void BuyMoreSupplies()
+        {
+            Console.WriteLine();
+            Console.ReadLine();
+        }
+        
     }
 }
