@@ -19,6 +19,7 @@ namespace LemonadeStand
             //ChooseSupplies();
             BuySupplies();
 
+
         }
         public void DisplayWelcome()
         {
@@ -83,7 +84,7 @@ namespace LemonadeStand
                     Console.WriteLine("Please press ENTER to continue.");
                     break;
                 case "7":
-                    Console.WriteLine(" Wow! " + chooseDay + " Days, you are on your last day? ");
+                    Console.WriteLine(" Wow! " + chooseDay + " Days, you are running out of time! ");
                     Console.WriteLine("Please press ENTER to continue.");
                     break;
             }
@@ -109,10 +110,42 @@ namespace LemonadeStand
         public void BuySupplies()
         {
             Console.WriteLine("Please buy all required Supplies to make Lemonade.");
-            Console.WriteLine("Please press ENTER to continue.");
-            Console.ReadLine();
+ 
+            // create a new storeprice object name storeSupplies
             StorePrices storeSupplies = new LemonadeStand.StorePrices();
+
+
+            // start enter number of supplies here ...
+            Console.WriteLine("Enter number of Cups: ");
+            storeSupplies.Cups = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Enter number of Lemons: ");
+            storeSupplies.Lemons = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Enter number of Ice: ");
+            storeSupplies.Ice = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Enter number of Sugars: ");
+            storeSupplies.Sugars = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter number of Waters: ");
+            storeSupplies.Waters = Convert.ToInt32(Console.ReadLine());
+                   
+           // buy supplies
             storeSupplies.BuySupplies();
+
+            // display result
+            //Console.WriteLine("TotalCups       : " + storeSupplies.Cups);
+            Console.WriteLine("TotalCostOfCup  : " + storeSupplies.TotalCostOfCup);
+            Console.WriteLine("TotalCostOfIce  : " + storeSupplies.TotalCostOfIce);
+            Console.WriteLine("TotalCostOfLemon: " + storeSupplies.TotalCostOfLemon);
+            Console.WriteLine("TotalCostOfSugar: " + storeSupplies.TotalCostOfSugar);
+            Console.WriteLine("TotalCostOfWater: " + storeSupplies.TotalCostOfWater);
+            Console.WriteLine("TotalsupplyCost : " + storeSupplies.TotalsupplyCost);
+
         }
         public void BuyMoreSupplies()
         {

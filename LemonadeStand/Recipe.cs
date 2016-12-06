@@ -9,7 +9,7 @@ namespace LemonadeStand
     class Recipe
     {
 
-
+        public int waterRecipe;
         public int lemonsRecipe;
         public int sugarRecipe;
         public int iceRecipe;
