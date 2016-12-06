@@ -6,52 +6,58 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
+
     class Wallet : Player
     {
-        public string playerName;
+        public string player;
         public double balance;
-        public const double DEFAULT_BALANCE = 20.00;
-        internal static StorePrices Balance;
-
-        public Wallet()
-        {
-            
-        }
-        public Wallet(string Name, double Balance)
-        {
-            playerName = Name;
-            balance = Balance;
-            if (Balance == 0)
-            {
-                balance = DEFAULT_BALANCE;
-            }
-            else
-            {
-                balance = Balance;
-            }
+        public double currentBalance;
+        public Store store;
 
 
-        }
-        public Wallet(string Name)
+        //public Wallet()
+        //{
+        //    currentBalance = 20.00;
+
+        //}
+
+
+
+
+        //    player = Name;
+        //    balance = Balance;
+        //    if (Balance == 0)
+        //    {
+        //        balance = DEFAULT_BALANCE;
+        //    }
+        //    else
+        //    {
+        //        balance = Balance;
+        //    }
+        //}
+        //public Wallet(string Name)
+        //{
+        //    player = Name;
+        //    balance = DEFAULT_BALANCE;
+        //}
+
+        public double CurrentBalance()
         {
-            playerName = Name;
-            balance = DEFAULT_BALANCE;
+
+            return currentBalance;
         }
-        public void SetName( string Name)
-        {
-            playerName = Name;
-        }
-        public void SetBalance(double Balance)
-        {
-            balance = Balance;
-        }
-        public string GetName()
-        {
-            return playerName;
-        }
-        public double GetBalance()
-        {
-            return balance;
-        }
+
     }
 }
+
+    //}
+    //public void SetBalance(double Balance)
+    //{
+    //    balance = Balance;
+    //}
+    //public string GetPlayer()
+    //    {
+    //        return player;
+    //    }
+
+    //}
