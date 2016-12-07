@@ -12,52 +12,78 @@ namespace LemonadeStand
         public string player;
         public double balance;
         public double currentBalance;
-        public Store store;
+        Player totalCostOfCup = new Player();
+        Player TotalBalance = new Player();
 
 
-        //public Wallet()
-        //{
-        //    currentBalance = 20.00;
-
-        //}
-
-
-
-
-        //    player = Name;
-        //    balance = Balance;
-        //    if (Balance == 0)
-        //    {
-        //        balance = DEFAULT_BALANCE;
-        //    }
-        //    else
-        //    {
-        //        balance = Balance;
-        //    }
-        //}
-        //public Wallet(string Name)
-        //{
-        //    player = Name;
-        //    balance = DEFAULT_BALANCE;
-        //}
-
-        public double CurrentBalance()
+        public void SetBalance(double Balance)
         {
-
-            return currentBalance;
+            balance = Balance;
         }
+        public string GetPlayer()
+        {
+            return player;
+        }
+
+
+        //        private void BalanceLeft()
+        //        {
+        //            double totalsupplyCost;
+        //            double DefaultBalance;
+        //            double result;
+        //            totalsupplyCost = Convert.ToDouble(Console.ReadLine());
+        //            DefaultBalance = Convert.ToDouble(Console.ReadLine());
+        //            result = DefaultBalance - totalsupplyCost;
+        //            Console.Write(" Do you want to Continue Shopping?");
+        //            Console.ReadLine();
+
+        //            return BalanceLeft;
 
     }
 }
+//}
+//public int inWallet(int priceOfWater, int priceOfLemon, int priceOfCup, int priceOfIce, int priceOfSugar)
+//{
+//    int RemainningBalance;
+//    RemainningBalance = priceOfWater - priceOfLemon - priceOfCup - priceOfIce - priceOfSugar;
+//    return RemainningBalance;
+//}
 
-    //}
-    //public void SetBalance(double Balance)
-    //{
-    //    balance = Balance;
-    //}
-    //public string GetPlayer()
-    //    {
-    //        return player;
-    //    }
 
-    //}
+
+
+//{
+//    currentBalance = 30.00;
+
+//}
+
+
+
+
+//    player = Name;
+//    balance = Balance;
+//    if (Balance == 0)
+//    {
+//        balance = DEFAULT_BALANCE;
+//    }
+//    else
+//    {
+//        balance = Balance;
+//    }
+//}
+//    public double BalanceLeft()
+//    {
+//        //player = Name;
+//        balance = DEFAULT_BALANCE;
+//    }
+
+//    public double CurrentBalance()
+//    {
+
+//        return currentBalance;
+//    }
+
+//}
+
+
+

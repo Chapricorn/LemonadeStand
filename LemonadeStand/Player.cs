@@ -33,7 +33,7 @@ namespace LemonadeStand
         }
         public void InWallet()
         {
-            Console.WriteLine(" You are starting out only with $20.00 in your Wallet.");
+            Console.WriteLine(" You are starting out only with $30.00 in your Wallet.");
         }
         public void BuySupplies()
 
@@ -45,7 +45,9 @@ namespace LemonadeStand
             try
             {
                 Console.WriteLine(" Enter number of Cups you want to buy: ");
+                Console.WriteLine(" Cost for '1' Empty Cup is $.10. \n");
                 storeSupplies.cups = Convert.ToInt32(Console.ReadLine());
+                //Console.WriteLine(" \n Total Cost : $" = - store.priceOfCup);
                 //wallet.GetBalance = store.priceOfCup - storeSupplies.cups;
             }
 
@@ -58,7 +60,9 @@ namespace LemonadeStand
             {
 
                 Console.WriteLine(" Enter number of Lemons you want to buy: ");
+                Console.WriteLine(" Cost for '1' Lemon is $.75. \n");
                 storeSupplies.lemons = Convert.ToInt32(Console.ReadLine());
+               
             }
 
             catch (Exception e)
@@ -71,7 +75,9 @@ namespace LemonadeStand
 
 
                 Console.WriteLine(" Enter number of Ice Cubes you want to buy: ");
+                Console.WriteLine(" Cost for '1' Ice Cube is $.05. \n");
                 storeSupplies.ice = Convert.ToInt32(Console.ReadLine());
+                
             }
             catch (Exception e)
             {
@@ -81,8 +87,10 @@ namespace LemonadeStand
             try
             {
 
-                    Console.WriteLine(" Enter number bags of Sugars you want to buy: ");
-                    storeSupplies.sugars = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(" Enter number bags of Sugars you want to buy: ");
+                Console.WriteLine(" Cost for '1' Bag of Sugar is $1.50. \n");
+                storeSupplies.sugars = Convert.ToInt32(Console.ReadLine());
+               
             }
 
             catch (Exception e)
@@ -95,8 +103,10 @@ namespace LemonadeStand
             {
 
                 Console.WriteLine(" Enter number of bottled Waters you want to buy: ");
-                    storeSupplies.waters = Convert.ToInt32(Console.ReadLine());
-                  
+                Console.WriteLine(" Cost for '1' Bottled Water is $1.75. \n");
+                storeSupplies.waters = Convert.ToInt32(Console.ReadLine());
+               
+
             }
                 catch (Exception e)
                 {
@@ -108,23 +118,29 @@ namespace LemonadeStand
                 Console.WriteLine("\n Your Reciept. \n");
 
 
-                storeSupplies.BuySupplies();
+            storeSupplies.CalculateSupplies();
 
-                Console.WriteLine(" Total of Cups bought             : " + storeSupplies.cups);
-                Console.WriteLine(" Total Cost of Cups               : " + storeSupplies.totalCostOfCup);
-                Console.WriteLine(" Total of Ice Cubes bought        : " + storeSupplies.ice);
-                Console.WriteLine(" Total Cost of Ice                : " + storeSupplies.totalCostOfIce);
-                Console.WriteLine(" Total of Lemons bought           : " + storeSupplies.lemons);
-                Console.WriteLine(" Total Cost of Lemons             : " + storeSupplies.totalCostOfLemon);
-                Console.WriteLine(" Total bags of Sugars bought      : " + storeSupplies.sugars);
-                Console.WriteLine(" Total Cost for bags of Sugars    : " + storeSupplies.totalCostOfSugar);
-                Console.WriteLine(" Total bottles of Water bought    : " + storeSupplies.waters);
-                Console.WriteLine(" Total Cost of bottled Water      : " + storeSupplies.totalCostOfWater);
+            Console.WriteLine(" Total of Cups bought             : " + storeSupplies.cups);
+            Console.WriteLine(" Total Cost of Cups               : $" + storeSupplies.totalCostOfCup);
+            Console.WriteLine(" Total of Ice Cubes bought        : " + storeSupplies.ice);
+            Console.WriteLine(" Total Cost of Ice                : $" + storeSupplies.totalCostOfIce);
+            Console.WriteLine(" Total of Lemons bought           : " + storeSupplies.lemons);
+            Console.WriteLine(" Total Cost of Lemons             : $" + storeSupplies.totalCostOfLemon);
+            Console.WriteLine(" Total bags of Sugars bought      : " + storeSupplies.sugars);
+            Console.WriteLine(" Total Cost for bags of Sugars    : $" + storeSupplies.totalCostOfSugar);
+            Console.WriteLine(" Total bottles of Water bought    : " + storeSupplies.waters);
+            Console.WriteLine(" Total Cost of bottled Water      : $" + storeSupplies.totalCostOfWater);
 
-                Console.WriteLine(" Total Cost : " + storeSupplies.totalsupplyCost);
+            Console.WriteLine(" \n Total Cost : $" + storeSupplies.totalsupplyCost);
 
             }
-            //public void BuyMoreSupplies()
+      
+        
+        
+        
+        
+        
+        //public void BuyMoreSupplies()
             //{
             //    Console.WriteLine();
             //    Console.ReadLine();

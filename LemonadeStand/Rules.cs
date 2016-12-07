@@ -13,7 +13,7 @@ namespace LemonadeStand
             Console.WriteLine(" You have $20.00 to buy all required ingrediets to make as many cups of Lemonade as you can to sell for 7 days. ");
             Console.WriteLine(" Do not go Over your Budget. Shop wisely. ");
             Console.WriteLine(" The things you will need are as follows: ");
-            Console.WriteLine(" Water, Lemons, Sugar, Ice, and Cups.");
+            Console.WriteLine(" Water Bottles, Lemons, bags of Sugars, Ice Cubes, and Empty Cups.");
             Console.WriteLine(" The goal is to make as much Profit as possible in 7 Days with $20. \n");
 
         }

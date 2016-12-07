@@ -6,26 +6,40 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    //public Player player;
-    //public StorePrices store;
+
     class Game
     {
+
+        public Weather weather;
+        public Player supplies;
+        public Wallet defaultBalance;
+
+        
+        public Game()
+        {
+            weather = new Weather();
+            supplies = new Player();
+            defaultBalance = new Wallet();
+        }
+         
         public void StartGame()
         {
             DisplayWelcome();
             DisplayRule();
+            //WeatherForcasted();
             GetPlayerName();
             TotalDays();
             //ChooseSupplies();
-            InWallet();
-            BuySupplies();
-            BuyMoreSupplies();
-
-
-        }
+            //BalanceLeft();
+            //SetBalance();
+            supplies.BuySupplies();
+            //BuyMoreSupplies();
+            weather.GetWeather();
+  
+    }
         public void DisplayWelcome()
         {
-            Console.WriteLine(" Welcome to your NeighLemonade Stand Game \n");
+            Console.WriteLine(" Welcome to your Neighborhood Lemonade Stand Game \n");
         }
         public void DisplayRule()
         {
@@ -54,6 +68,14 @@ namespace LemonadeStand
             string CharacterName = Console.ReadLine();
             Console.WriteLine(" Good Morning {0} ", CharacterName + "!");
         }
+
+        //public int WeatherForcasted()
+        //{
+        //    Weather Forcast = new Weather();
+        //    Forcast.GetWeather();
+        //    return GetWeather;
+        //}
+
         public void TotalDays()
         {
             Console.Write(" Choose between Day '1' and Day '7' to Start Selling Lemonades. \n");
@@ -93,33 +115,25 @@ namespace LemonadeStand
             
            
         }
-        public void InWallet()
-        {
-            Player GetDefaultBalance = new Player();
-            GetDefaultBalance.InWallet();
-        }
-        public void BuySupplies()
-        {
-            Player GetSupplies = new Player();
-            GetSupplies.BuySupplies();
-        }
+    
+      
 
 
-        public void BuyMoreSupplies()
-        {
-
-        }
-
-
-
-        //public void ChooseSupplies()
+        //public void BalanceLeft()
         //{
-        //    Console.WriteLine("Please Choose the Supplies to make Lemonade.");
-        //    Console.ReadLine();
-        //    StorePrices storeSupplies = new LemonadeStand.StorePrices();
-        //    storeSupplies.BuySupplies();
+        //    Wallet GetBalance = new Wallet();
+        //    GetBalance.wallet();
+        //}
+
+
+
+        //public void BuyMoreSupplies()
+        //{
 
         //}
 
+
+
+    
     }
 }

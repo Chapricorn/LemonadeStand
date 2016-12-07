@@ -13,30 +13,30 @@ namespace LemonadeStand
         Inventory inventory = new Inventory();
         //Wallet wallet = new Wallet();
 
-        public int cups = 0;
-        public int waters = 0;
-        public int lemons = 0;
-        public int sugars = 0;
-        public int ice = 0;
+        public int cups     = 0;
+        public int waters   = 0;
+        public int lemons   = 0;
+        public int sugars   = 0;
+        public int ice      = 0;
 
-        public double totalCostOfWater = 0;
-        public double totalCostOfLemon = 0;
-        public double totalCostOfCup = 0;
-        public double totalCostOfSugar = 0;
-        public double totalCostOfIce = 0;
-        public double totalsupplyCost = 0;
+        public double totalCostOfWater  = 0;
+        public double totalCostOfLemon  = 0;
+        public double totalCostOfCup    = 0;
+        public double totalCostOfSugar  = 0;
+        public double totalCostOfIce    = 0;
+        public double totalsupplyCost   = 0;
 
 
-        public double numberOfWater = 1;
-        public double numberOfLemon = 1;
-        public double numberOfIce = 1;
-        public double numberOfCup = 1;
-        public double numberOfSugar = 1;
-        public double priceOfWater = 1.00;
-        public double priceOfLemon = 0.10;
-        public double priceOfCup = 0.15;
-        public double priceOfSugar = 1.00;
-        public double priceOfIce = 0.02;
+        public double numberOfWater     = 1;
+        public double numberOfLemon     = 1;
+        public double numberOfIce       = 1;
+        public double numberOfCup       = 1;
+        public double numberOfSugar     = 1;
+        public double priceOfWater      = 1.75;
+        public double priceOfLemon      = 0.75;
+        public double priceOfCup        = 0.10;
+        public double priceOfSugar      = 1.50;
+        public double priceOfIce        = 0.05;
 
 
         public double PriceOfCups()
@@ -81,7 +81,7 @@ namespace LemonadeStand
         }
 
 
-        public void BuySupplies()
+        public void CalculateSupplies()
         {
 
 
