@@ -43,6 +43,9 @@ namespace lemonadeStand2
         {
             temperature = ChooseWeather.Next(50, 100);
             Console.WriteLine(" But, the Temperature is about {0} degrees. ", temperature);
+            Console.WriteLine(" \n ");
+            Console.WriteLine(" Now lets go shopping! ");
+            Console.WriteLine(" \n ");
             return temperature;
 
         }

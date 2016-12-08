@@ -20,8 +20,8 @@ namespace lemonadeStand2
 
         public void SupplyBalance()
         {
-            Console.WriteLine(" Shopping Cart: {0} bottles of Water, {1} Lemons, {2} Ice Cubes, {3} Empty Cups, {4} Sugar Cubes \n");
-            Console.WriteLine("", balanceOfCups, balanceOfWaterBottles, balanceOfLemons, balanceOfIce, balanceOfSugarCubes);
+            Console.WriteLine(" Your Total Items: {0} Empty Cups, {1} Bottles of Water, {2} Lemons, {3} Ice Cubes, {4} Sugar Cubes \n", balanceOfCups, balanceOfWaterBottles, balanceOfLemons, balanceOfIce, balanceOfSugarCubes);
+            //Console.WriteLine("", balanceOfCups, balanceOfWaterBottles, balanceOfLemons, balanceOfIce, balanceOfSugarCubes);
 
            
         }

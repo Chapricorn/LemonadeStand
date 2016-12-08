@@ -275,12 +275,12 @@ namespace lemonadeStand2
             inventory.SupplyBalance();
 
             // save daily result inventory to a list
-            Inventory newInventory = new Inventory();
-            newInventory.balanceOfCups = inventory.balanceOfCups;
-            newInventory.balanceOfWaterBottles = inventory.balanceOfWaterBottles;
-            newInventory.balanceOfLemons = inventory.balanceOfLemons;
-            newInventory.balanceOfSugarCubes = inventory.balanceOfSugarCubes;
-            newInventory.balanceOfIce = inventory.balanceOfIce;
+            Inventory newInventory              = new Inventory();
+            newInventory.balanceOfCups          = inventory.balanceOfCups;
+            newInventory.balanceOfWaterBottles  = inventory.balanceOfWaterBottles;
+            newInventory.balanceOfLemons        = inventory.balanceOfLemons;
+            newInventory.balanceOfSugarCubes    = inventory.balanceOfSugarCubes;
+            newInventory.balanceOfIce           = inventory.balanceOfIce;
             //newInventory.totalCupsOfLemonades = inventory.totalCupsOfLemonades;
             //newInventory.cupsOfLemonadesSold = inventory.cupsOfLemonadesSold;
             // add daily inventory to a list
@@ -290,23 +290,32 @@ namespace lemonadeStand2
             wallet.displayCurrentBalance();
             {
                 {
-                    inventory.totalCupsOfLemonades  = inventory.totalCupsOfLemonades    + 10;
+                    inventory.totalCupsOfLemonades  = inventory.totalCupsOfLemonades    + 8;
                     inventory.balanceOfLemons       = inventory.balanceOfLemons         - 4;
                     inventory.balanceOfSugarCubes   = inventory.balanceOfSugarCubes     - 2;
-                    inventory.balanceOfIce          = inventory.balanceOfIce            - 8;
+                    inventory.balanceOfIce          = inventory.balanceOfIce            - 6;
                     inventory.balanceOfWaterBottles = inventory.balanceOfWaterBottles   - 1;
-                    inventory.balanceOfCups         = inventory.balanceOfCups           - 10;
+                    inventory.balanceOfCups         = inventory.balanceOfCups           - 8;
 
-                    Console.WriteLine(" There are {0} cup(s) of Lemonade(s). \n", inventory.totalCupsOfLemonades);
+                    Console.WriteLine(" Good, You've Made {0} cup(s) of Lemonade(s) to Sell. \n", inventory.totalCupsOfLemonades);
                     inventory.SupplyBalance();
 
-                    
+                    //// Need to finish if statement for daily item result so it dont go below zero
 
 
+                    //if (newInventory.balanceOfCups < inventory.balanceOfCups + 8)
+                    //{
+                    //    //wallet.CurrentBalance = wallet.CurrentBalance - (stand.PricePerSugar * item);
+                    //    //inventory.balanceOfSugarCubes += (stand.numberOfSugar * item);
+                    //    Console.WriteLine(" There are {0} Cups in your Shopping Cart, Do you want to buy mor?. \n ");
+
+                    //    //// compute the total expense
+                    //    //totalExpense = totalExpense + stand.PricePerCup * item;
+                    //    //DisplayTotalBalance();
+                    }
                 }
             }
-        }
-                    public void MakeMoreLemonades()
+             public void MakeMoreLemonades()
         {
             Console.WriteLine(" Want to make more Lemonades? Yes | No \n");
             string MakeMore = Console.ReadLine().ToLower();
@@ -325,8 +334,9 @@ namespace lemonadeStand2
         }
         }
 
-  
-    }
+
+}
+
 
 
 
