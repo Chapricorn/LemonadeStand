@@ -39,7 +39,9 @@ namespace lemonadeStand2
         public void SellLemonades()
         {
             Customer customer = new Customer();
-            Console.WriteLine(" How many Cups of Lemonade Customer buys. \n");
+            Console.WriteLine(" Congrats, you have Customers waiting in line. \n");
+            Console.WriteLine(" Please help your Customers. ");
+            Console.WriteLine(" How many cups of Lemonades did all your Customers buy?. ");
             try
             {
                 int item = Convert.ToInt32(Console.ReadLine());
@@ -49,7 +51,8 @@ namespace lemonadeStand2
             }
             catch (Exception e)
             {
-                // Do Something
+                Console.WriteLine(" Invalid Entry ");
+                Console.WriteLine(" Please try Again. ");
             }
 
             Console.WriteLine(" Enter Customer Name. \n");
@@ -59,7 +62,8 @@ namespace lemonadeStand2
             }
             catch (Exception e)
             {
-                // Do Something;
+                Console.WriteLine(" Invalid Entry ");
+                Console.WriteLine(" Please try Again!");
             }
 
 
