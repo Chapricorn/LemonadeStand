@@ -1,6 +1,0 @@
-C:\Users\koudk\Desktop\FinalLemonade\LemonadeStand\LemonadeStand\bin\Debug\lemonadeStand2.exe.config
-C:\Users\koudk\Desktop\FinalLemonade\LemonadeStand\LemonadeStand\bin\Debug\lemonadeStand2.exe
-C:\Users\koudk\Desktop\FinalLemonade\LemonadeStand\LemonadeStand\bin\Debug\lemonadeStand2.pdb
-C:\Users\koudk\Desktop\FinalLemonade\LemonadeStand\LemonadeStand\obj\Debug\lemonadeStand2.csprojResolveAssemblyReference.cache
-C:\Users\koudk\Desktop\FinalLemonade\LemonadeStand\LemonadeStand\obj\Debug\lemonadeStand2.exe
-C:\Users\koudk\Desktop\FinalLemonade\LemonadeStand\LemonadeStand\obj\Debug\lemonadeStand2.pdb
